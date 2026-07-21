@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shyam Gupta | Cyber Security Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    <div class="scan-line"></div>
+    <div class="bg-animation"></div>
+
+    <header>
+        <nav class="navbar glass">
+            <h2 class="logo">Cyber.<span>Dev</span></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text fade-in">
+            <p class="greet">Hello, I'm</p>
+            <h1><span id="animated-name">SHYAM GUPTA</span></h1>
+            <h3>I build <span class="typing"></span></h3>
+            <p>CS Student | Cyber Security & Full Stack Developer</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                
+                <a href="Minimalist Modern Professional CV Resume.pdf" target="_blank" class="btn btn-outline">Download CV</a>
+            </div>
+        </div>
+        <div class="hero-img fade-in">
+            <div class="glow-line"></div>
+            <div class="holo-grid"></div>
+            <img src="myphoto.jpg" alt="Your Photo">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-box glass fade-in">
+            <p>I am a passionate Computer Science student and an aspiring Web Developer with a strong interest in building responsive, user-friendly, and modern websites. I enjoy working with technologies like HTML, CSS, JavaScript, and Java to bring creative ideas to life through code. I believe in the power of "learning by doing" and that’s why I focus on building real-world projects that solve practical problems. Problem-solving and continuous learning drive me every day. I am constantly exploring new frameworks, tools, and design principles to improve my skills.My goal is to grow as a full-stack developer, collaborate on impactful projects, and contribute meaningfully to the tech community. I’m looking for opportunities where I can learn, build, and make a difference with technology.</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skill-grid">
+            <div class="skill-card glass"><h4>HTML5</h4></div>
+            <div class="skill-card glass"><h4>CSS3</h4></div>
+            <div class="skill-card glass"><h4>JavaScript</h4></div>
+            <div class="skill-card glass"><h4>React</h4></div>
+            <div class="skill-card glass"><h4>Node.js</h4></div>
+            <div class="skill-card glass"><h4>Cyber Security</h4></div>
+            <div class="skill-card glass"><h4>Python</h4></div>
+            <div class="skill-card glass"><h4>Git & GitHub</h4></div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="project-grid">
+            <div class="project-card glass">
+                <div class="project-img"><img src="screenshot1.png" alt="Project 1"></div>
+                <h3>Birthday Management System</h3>
+                <p>java+css+html+j.son+react project with email login, password, Fee portal , real otps. suceesfully deployed.</p>
+                <div class="tags"><span>java</span><span>css</span><span>html</span></div>
+                <a href="screenshot1.png" target="_blank" class="btn-small">View Screenshot</a>
+            </div>
+            <div class="project-card glass">
+                <div class="project-img"><img src="screenshot2.png" alt="Project 2"></div>
+                <h3>gurb gain MarketIQ</h3>
+                <p>React + Firebase project,api handling, Payment, Admin panel. Code is being refactored.</p>
+                <div class="tags"><span>React</span><span>Firebase</span><span>Stripe</span></div>
+                <a href="screenshot2.png" target="_blank" class="btn-small">View Screenshot</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <div class="contact-box glass fade-in">
+            <p>📧 Pg275017@gmail.com</p>
+            <p>💼 linkedin.com/in/Shyam gupta </p>
+            <p>💻 github.com/Shyam gupta</p>
+        </div>
+    </section>
+
+    <footer><p>© 2026 shyam. Secured with ❤️ and CSS</p></footer>
+
+<script>
+// MATRIX RAIN
+const canvas = document.getElementById('matrix'); const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+const letters = '01ABCDEF#$%&'; const fontSize = 14; const columns = canvas.width/fontSize; const drops = [];
+for(let i=0;i<columns;i++) drops[i]=1;
+function draw(){ ctx.fillStyle='rgba(10,15,30,0.05)'; ctx.fillRect(0,0,canvas.width,canvas.height);
+ctx.fillStyle='#00ff88'; ctx.font=fontSize+'px monospace';
+for(let i=0;i<drops.length;i++){ ctx.fillText(letters[Math.floor(Math.random()*letters.length)], i*fontSize, drops[i]*fontSize);
+if(drops[i]*fontSize>canvas.height && Math.random()>0.975) drops[i]=0; drops[i]++; } }
+setInterval(draw,33); window.addEventListener('resize',()=>{canvas.width=window.innerWidth;canvas.height=window.innerHeight;})
+
+// TYPING ANIMATION
+const texts = ["Secure Web Apps", "Cyber Security Tools", "Modern UI"];
+let count=0,index=0,currentText='',letter='';
+(function type(){ if(count===texts.length) count=0; currentText=texts[count]; letter=currentText.slice(0,++index);
+document.querySelector('.typing').textContent=letter;
+if(letter.length===currentText.length){count++;index=0;setTimeout(type,2000);} else setTimeout(type,100); })();
+
+// SCROLL ANIMATION
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{ if(entry.isIntersecting) entry.target.classList.add('show'); });
+},{threshold:0.15});
+document.querySelectorAll('.fade-in,.section-title,.skill-card,.project-card').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
