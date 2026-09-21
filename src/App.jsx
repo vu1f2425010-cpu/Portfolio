@@ -7,7 +7,6 @@ import Education from './sections/Education';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
-import LearningDemo from './sections/LearningDemo';
 import './App.css';
 
 /**
@@ -15,7 +14,7 @@ import './App.css';
  * Manages:
  * - Theme State (Light / Dark Mode) using useState (Requirement 1 & 11)
  * - Persisting user theme preference via localStorage
- * - Seamless integration of Header, 6 Sections, Week 1 Learning Demo, and Footer
+ * - Seamless integration of Header, 6 Sections, and Footer
  */
 function App() {
   // 1. React State Requirement: Dark/Light Mode toggle
@@ -69,8 +68,6 @@ function App() {
         {/* Contact Section */}
         <Contact />
 
-        {/* Week 1 Learning Demonstration Section */}
-        <LearningDemo />
       </main>
 
       {/* 2. Footer Component (Assignment 2 Reusable Component) */}
