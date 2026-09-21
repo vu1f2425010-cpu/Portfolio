@@ -1,0 +1,233 @@
+/* ==========================================================
+   LEARNING DEMO SECTION STYLES
+   Interactive tabbed interface, code blocks, state sandbox
+   ========================================================== */
+
+.demo-tabs-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-bottom: 2.75rem;
+}
+
+.demo-tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1.35rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.demo-tab-btn:hover {
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+}
+
+.demo-tab-btn.active {
+  background: var(--accent-gradient);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+}
+
+.demo-tab-icon {
+  font-size: 1.15rem;
+}
+
+.demo-content-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+.demo-card-highlight {
+  display: flex;
+  flex-direction: column;
+}
+
+.demo-points-wrapper {
+  margin: 1rem 0;
+}
+
+.demo-points-title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.demo-points-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.demo-point-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.demo-check {
+  color: var(--accent-highlight);
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.demo-code-box {
+  margin-top: 1.25rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background: rgba(10, 15, 29, 0.9);
+}
+
+.code-box-header {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.code-content {
+  padding: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  line-height: 1.6;
+  color: #38bdf8;
+  overflow-x: auto;
+}
+
+/* Live Sandbox Column */
+.interactive-playground {
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.playground-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.playground-title {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.playground-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.playground-desc code {
+  color: var(--accent-secondary);
+  background: rgba(6, 182, 212, 0.1);
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+}
+
+.sandbox-feature {
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.sandbox-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+}
+
+.sandbox-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.sandbox-counter-value {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 800;
+  min-width: 40px;
+  text-align: center;
+  color: var(--accent-primary);
+}
+
+.toggle-explanation {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.toggle-explanation code {
+  color: var(--accent-highlight);
+  font-weight: 700;
+}
+
+/* Checklist */
+.components-checklist {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.checklist-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.checklist-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.check-chip {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--accent-highlight);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+@media (max-width: 992px) {
+  .demo-content-grid {
+    grid-template-columns: 1fr;
+  }
+}

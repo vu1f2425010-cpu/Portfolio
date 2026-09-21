@@ -1,0 +1,40 @@
+/* ==========================================================
+   APP LEVEL STYLES & LAYOUT
+   ========================================================== */
+
+.app-wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+#main-content {
+  flex: 1 0 auto;
+}
+
+/* Section Spacing and Transitions */
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle divider between sections */
+.section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--border-color) 50%, transparent 100%);
+}
+
+/* Accessibility: focus outlines */
+:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 3px;
+}

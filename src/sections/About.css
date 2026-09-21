@@ -1,0 +1,72 @@
+/* ==========================================================
+   ABOUT SECTION STYLES
+   Split narrative and highlight card grid
+   ========================================================== */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+.about-narrative {
+  padding: 2.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.narrative-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent-secondary);
+  margin-bottom: 0.35rem;
+}
+
+.narrative-title {
+  font-size: 1.85rem;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.narrative-text {
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+.narrative-text strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.about-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.15rem;
+  margin-top: 1rem;
+}
+
+.about-highlights-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.about-highlight-card {
+  padding: 0.5rem 0;
+}
+
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-narrative {
+    padding: 2rem;
+  }
+}
