@@ -46,6 +46,7 @@ const Footer = () => {
               <li><a href="#education">Education & Certifications</a></li>
               <li><a href="#skills">Technical Skills</a></li>
               <li><a href="#projects">Featured Projects</a></li>
+              <li><a href="#blog">Engineering Blog</a></li>
               <li><a href="#contact">Contact Me</a></li>
               <li><a href="#demo">Learning Showcase</a></li>
             </ul>

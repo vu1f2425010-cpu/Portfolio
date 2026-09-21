@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Mastering React 19: Actions, useActionState, and Server Functions",
+    "category": "React",
+    "date": "2026-03-15",
+    "summary": "An in-depth exploration of the newest features in React 19, focusing on form actions, transition states, and optimistically updating user interfaces without boilerplate.",
+    "readTime": "6 min read",
+    "tags": ["React", "Frontend", "Hooks"]
+  },
+  {
+    "id": 2,
+    "title": "Modern CSS Architecture: Glassmorphism, CSS Grid, and Subgrid",
+    "category": "CSS",
+    "date": "2026-02-28",
+    "summary": "How to structure complex responsive layouts using CSS Grid Level 2 Subgrid alongside backdrop-filter blur effects to create sleek dark-mode developer portals.",
+    "readTime": "5 min read",
+    "tags": ["CSS", "UI/UX", "Grid"]
+  },
+  {
+    "id": 3,
+    "title": "Deep Dive into JavaScript Closures and the Event Loop",
+    "category": "JavaScript",
+    "date": "2026-02-10",
+    "summary": "Demystifying asynchronous execution in JavaScript: microtasks vs macrotasks, lexical scoping, memory leak prevention, and practical concurrency patterns.",
+    "readTime": "8 min read",
+    "tags": ["JavaScript", "Async", "Engine"]
+  },
+  {
+    "id": 4,
+    "title": "Building Scalable REST & GraphQL APIs with Express and Node.js",
+    "category": "Backend",
+    "date": "2026-01-22",
+    "summary": "Best practices for architecting high-throughput backend services, including JWT auth security, Redis caching layers, input validation, and MongoDB indexing strategies.",
+    "readTime": "7 min read",
+    "tags": ["Backend", "Node.js", "MongoDB"]
+  },
+  {
+    "id": 5,
+    "title": "Component-Driven Design: Building Reusable Design Systems in React",
+    "category": "React",
+    "date": "2026-01-05",
+    "summary": "Strategies for crafting composable, accessible component libraries with zero CSS drift. Covers atomic design, polymorphic props, and keyboard navigation.",
+    "readTime": "4 min read",
+    "tags": ["React", "Design System", "Accessibility"]
+  },
+  {
+    "id": 6,
+    "title": "CSS Custom Properties and Fluid Typography with Clamp()",
+    "category": "CSS",
+    "date": "2025-12-18",
+    "summary": "Eliminating rigid breakpoint media queries using modern CSS math functions like clamp(), min(), and max() to generate perfectly scalable type systems across all screens.",
+    "readTime": "5 min read",
+    "tags": ["CSS", "Responsive", "Design"]
+  }
+]

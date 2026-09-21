@@ -4,12 +4,13 @@ import { educationData } from '../data/educationData';
 import './Education.css';
 
 /**
- * Education Section (Assignment 1 Requirement)
- * Highlights:
- * - BE in Computer Engineering
- * - College information
- * - Relevant coursework & academic milestones
- * - Renders cleanly using the reusable Card component (Assignment 2 Requirement)
+ * Education Section Component (Assignment Requirement 1)
+ * Displays:
+ * - Degree / Diploma details
+ * - College / School name
+ * - CGPA / Academic marks
+ * - Graduation year and timeline
+ * Renders in a clean, modern card format using the reusable Card component.
  */
 const Education = () => {
   return (
@@ -24,7 +25,7 @@ const Education = () => {
             Education & <span className="gradient-text">Qualifications</span>
           </h2>
           <p className="section-subtitle">
-            Formal foundations in Computer Engineering, computer science theories, and hands-on software development.
+            Formal foundations in Computer Engineering, core computer science principles, and hands-on software development.
           </p>
         </div>
 
@@ -34,22 +35,34 @@ const Education = () => {
             <Card
               key={item.id}
               title={item.degree}
-              subtitle={item.institution}
+              subtitle={item.collegeName || item.institution}
               description={item.description}
               badge={item.badge}
               icon="🎓"
               variant="education"
               className="education-card-item"
             >
-              {/* Nested Child Content for Education Details */}
+              {/* Institutional Affiliation */}
+              {item.institution && item.collegeName && (
+                <div className="education-affil">
+                  <span className="affil-label">Affiliated to:</span>
+                  <span className="affil-val">{item.institution}</span>
+                </div>
+              )}
+
+              {/* Education Details: Graduation Year & CGPA / Marks */}
               <div className="education-card-meta">
+                <div className="meta-row">
+                  <span className="meta-icon">🎓</span>
+                  <span className="meta-text graduation-pill">{item.graduationYear}</span>
+                </div>
                 <div className="meta-row">
                   <span className="meta-icon">📅</span>
                   <span className="meta-text">{item.period}</span>
                 </div>
                 <div className="meta-row">
                   <span className="meta-icon">🏆</span>
-                  <span className="meta-text score-text">{item.score}</span>
+                  <span className="meta-text score-text cgpa-badge">{item.cgpa || item.score}</span>
                 </div>
               </div>
 
