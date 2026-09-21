@@ -1,6 +1,8 @@
 # 🚀 Shyam Gupta | Modern React Developer Portfolio
 ### Week 1 Comprehensive Submission: Assignment 1 & Assignment 2
 
+🌐 **Live Vercel Deployment:** [https://port-drab-sigma.vercel.app/](https://port-drab-sigma.vercel.app/)
+
 A complete, modern, professional, and fully responsive Developer Portfolio website built using **React.js (v18+)**, **HTML5**, **CSS3**, and **JavaScript ES6+**.
 
 This project unites **Week 1 Assignment 1 (Responsive Personal Portfolio)** and **Week 1 Assignment 2 (5 Reusable React Components with Props, State, and Events)** into one cohesive web application.
@@ -204,6 +206,7 @@ c:\port/
 - **Styling**: Vanilla CSS3 (Custom Properties, Flexbox, CSS Grid, Glassmorphism)
 - **Tooling & Bundling**: Vite 5
 - **Typography**: Google Fonts (Outfit for headers, Inter for UI body, JetBrains Mono for code)
+- **Deployment**: [Vercel](https://port-drab-sigma.vercel.app/)
 
 ---
 
@@ -245,6 +248,7 @@ npm run preview
 ## 👤 Author
 
 **Shyam Gupta**  
+- **Live Portfolio**: [https://port-drab-sigma.vercel.app/](https://port-drab-sigma.vercel.app/)
 - **Email**: [pg275017@gmail.com](mailto:pg275017@gmail.com)  
 - **LinkedIn**: [linkedin.com/in/shyam-gupta](https://linkedin.com/in/shyam-gupta)  
 - **GitHub**: [github.com/Shyamgupta](https://github.com/Shyamgupta)
