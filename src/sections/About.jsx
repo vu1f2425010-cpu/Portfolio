@@ -76,6 +76,7 @@ const About = () => {
                 text="Download Resume PDF"
                 href="/resume.pdf"
                 target="_blank"
+                download="Shyam_Gupta_Resume.pdf"
                 variant="primary"
                 icon="📥"
               />

@@ -90,6 +90,7 @@ const Hero = () => {
               text="Download CV"
               href="/resume.pdf"
               target="_blank"
+              download="Shyam_Gupta_Resume.pdf"
               variant="secondary"
               icon="📄"
             />
