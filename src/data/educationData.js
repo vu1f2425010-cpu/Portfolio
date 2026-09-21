@@ -1,30 +1,52 @@
-// Education dataset for dynamic rendering with Card component
+// Education & Credentials dataset aligned with Shyam Gupta's Resume
 export const educationData = [
   {
     id: 1,
-    degree: "Bachelor of Engineering (B.E.) in Computer Engineering",
-    institution: "University Institute of Technology / Engineering College",
-    period: "2023 - Present",
-    score: "CGPA: 8.8 / 10.0 (First Class with Distinction)",
-    badge: "Undergraduate Degree",
-    description: "Focusing on Software Engineering, Data Structures & Algorithms, Full Stack Web Development, Database Management Systems, and Cyber Security principles.",
+    degree: "B.E. in Computer Engineering (Third Year)",
+    institution: "Mumbai University",
+    period: "2024 - 2028",
+    score: "Undergraduate (3rd Year)",
+    badge: "Current Degree",
+    description: "Deep dive into scalable backend architectures, database indexing, distributed systems, operating systems, computer networks, and full stack web development.",
     highlights: [
-      "Core Courses: Data Structures, Operating Systems, Computer Networks, DBMS, Object-Oriented Programming (Java/C++)",
-      "Active participant in technical symposiums, hackathons, and web development workshops",
-      "Lead developer on departmental web portal initiatives"
+      "Specializing in Backend Engineering, API Architecture, and Modern Full Stack Systems",
+      "Core Courses: Data Structures & Algorithms, Database Management Systems (SQL & MongoDB), Computer Networks, Operating Systems",
+      "Hands-on development experience in production startups (GrubGain, DecodeLabs)"
     ]
   },
   {
     id: 2,
-    degree: "Higher Secondary Certificate (HSC) - Science Stream",
-    institution: "Senior Secondary School",
-    period: "2021 - 2023",
-    score: "Percentage: 86.5%",
-    badge: "Senior Secondary (12th)",
-    description: "Majored in Physics, Chemistry, Mathematics, and Computer Science with top honors in foundational programming and algorithmic logic.",
+    degree: "Higher Secondary Certificate (HSC) - Science",
+    institution: "Maharashtra State Board",
+    period: "2022 - 2024",
+    score: "JEE (85%) | CET PCM (70%)",
+    badge: "HSC Science",
+    description: "Rigorous curriculum focused on Physics, Chemistry, Mathematics, and foundational computer logic.",
     highlights: [
-      "Excellence in Computer Science and Mathematics",
-      "Built early procedural projects in C and introductory web pages in HTML/CSS"
+      "Competitive score in Joint Entrance Examination (JEE) - 85th Percentile",
+      "Solid foundations in algorithmic problem solving and analytical thinking"
+    ]
+  },
+  {
+    id: 3,
+    degree: "Secondary School Certificate (SSC)",
+    institution: "Maharashtra State Board",
+    period: "2021 - 2022",
+    score: "First Class with Distinction",
+    badge: "SSC Secondary",
+    description: "Secondary education with top marks across Mathematics, Science, and English.",
+    highlights: [
+      "Active participation in school technical exhibitions and logic competitions",
+      "Graduated with outstanding academic distinction"
     ]
   }
+];
+
+// Professional Certifications directly from Resume
+export const certificationsData = [
+  { name: "Cisco Cybersecurity", issuer: "Cisco Networking Academy", icon: "🛡️" },
+  { name: "MongoDB Associate", issuer: "MongoDB University", icon: "🍃" },
+  { name: "Gemini Certified Student", issuer: "Google Gemini", icon: "✨" },
+  { name: "Power BI Data Analyst", issuer: "Microsoft Power BI", icon: "📊" },
+  { name: "Databricks GenAI Fundamentals", issuer: "Databricks", icon: "🤖" }
 ];

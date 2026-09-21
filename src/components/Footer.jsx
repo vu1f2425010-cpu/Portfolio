@@ -4,7 +4,7 @@ import './Footer.css';
 
 /**
  * Reusable Footer Component (Assignment 2 Requirement)
- * Displays: Name, short description, social icons, quick links, copyright, and back to top
+ * Displays: Shyam Gupta, Full Stack & Backend Developer (Thane, Mumbai), exact socials and quick links
  */
 const Footer = () => {
   const scrollToTop = () => {
@@ -29,11 +29,11 @@ const Footer = () => {
               </span>
             </a>
             <p className="footer-description">
-              Computer Engineering Student & Aspiring Full Stack Developer. Dedicated to crafting responsive, performant, and delightful digital web experiences.
+              Full Stack Developer & Backend Developer based in Thane, Mumbai. Passionate about architecting high-performance APIs, real-time databases, and responsive React applications.
             </p>
             <div className="footer-status">
               <span className="pulse-dot"></span>
-              <span className="status-text">Available for Internships & Projects</span>
+              <span className="status-text">Available for Full Stack & Backend Roles</span>
             </div>
           </div>
 
@@ -42,21 +42,21 @@ const Footer = () => {
             <h4 className="footer-col-title">Navigation</h4>
             <ul className="footer-links">
               <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#education">Education</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#about">About & Experience</a></li>
+              <li><a href="#education">Education & Certifications</a></li>
+              <li><a href="#skills">Technical Skills</a></li>
+              <li><a href="#projects">Featured Projects</a></li>
+              <li><a href="#contact">Contact Me</a></li>
               <li><a href="#demo">Learning Showcase</a></li>
             </ul>
           </div>
 
-          {/* Social Links */}
+          {/* Social Links directly from Resume */}
           <div className="footer-social-col">
-            <h4 className="footer-col-title">Connect & Social</h4>
+            <h4 className="footer-col-title">Profiles & Social</h4>
             <div className="social-links-grid">
               <a
-                href="https://github.com/Shyamgupta"
+                href="https://github.com/vu1f2425010-cpu"
                 target="_blank"
                 rel="noreferrer"
                 className="social-btn glass-panel"
@@ -65,12 +65,12 @@ const Footer = () => {
                 <span className="social-icon">🐙</span>
                 <div className="social-info">
                   <span className="social-platform">GitHub</span>
-                  <span className="social-handle">@Shyamgupta</span>
+                  <span className="social-handle">@vu1f2425010-cpu</span>
                 </div>
               </a>
 
               <a
-                href="https://linkedin.com/in/shyam-gupta"
+                href="https://linkedin.com/in/Shyam-Gupta"
                 target="_blank"
                 rel="noreferrer"
                 className="social-btn glass-panel"
@@ -94,6 +94,18 @@ const Footer = () => {
                   <span className="social-handle">pg275017@gmail.com</span>
                 </div>
               </a>
+
+              <a
+                href="tel:+919321407216"
+                className="social-btn glass-panel"
+                aria-label="Call Shyam"
+              >
+                <span className="social-icon">📞</span>
+                <div className="social-info">
+                  <span className="social-platform">Phone</span>
+                  <span className="social-handle">+91 9321407216</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -104,7 +116,7 @@ const Footer = () => {
         {/* Bottom Footer: Copyright and Back-to-Top Button */}
         <div className="footer-bottom">
           <p className="copyright-text">
-            © {currentYear} <span className="copyright-name">Shyam Gupta</span>. Built with React.js, HTML5, CSS3 & JavaScript ES6+.
+            © {currentYear} <span className="copyright-name">Shyam Gupta</span> • Full Stack & Backend Developer • Thane, Mumbai
           </p>
           <div className="footer-actions">
             <Button

@@ -1,6 +1,7 @@
 /* ==========================================================
    SKILLS SECTION STYLES
    Filter pills, skill cards, chip badges, hover animations
+   Background: #0A0F1C, Cards: #111827, Accent: #38BDF8, Hover: #FACC15
    ========================================================== */
 
 .skills-filter-bar {
@@ -12,27 +13,29 @@
 }
 
 .filter-pill {
-  padding: 0.55rem 1.25rem;
+  padding: 0.55rem 1.35rem;
   font-size: 0.88rem;
   font-weight: 600;
   border-radius: var(--radius-full);
   border: 1px solid var(--border-color);
-  background: var(--bg-card);
+  background: #111827;
   color: var(--text-secondary);
   cursor: pointer;
   transition: all var(--transition-fast);
 }
 
 .filter-pill:hover {
-  border-color: var(--border-hover);
-  color: var(--text-primary);
+  border-color: #FACC15; /* Gold hover */
+  color: #FACC15;
+  transform: translateY(-2px);
 }
 
 .filter-pill.active {
-  background: var(--accent-gradient);
-  color: #ffffff;
-  border-color: transparent;
-  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+  background: #38BDF8; /* Electric blue active */
+  color: #0A0F1C;
+  border-color: #38BDF8;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.35);
 }
 
 .skills-grid {
@@ -53,20 +56,21 @@
   display: flex;
   align-items: center;
   gap: 0.65rem;
-  padding: 0.65rem 0.85rem;
+  padding: 0.7rem 0.9rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
+  background: rgba(10, 15, 28, 0.65);
   transition: all var(--transition-fast);
 }
 
 .skill-chip:hover {
   transform: translateY(-3px);
-  border-color: var(--border-hover);
-  background: var(--bg-card-hover);
+  border-color: #FACC15; /* Gold hover */
+  box-shadow: 0 0 15px rgba(250, 204, 21, 0.2);
 }
 
 .skill-chip-icon {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 .skill-chip-info {
@@ -76,29 +80,34 @@
 
 .skill-chip-name {
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
+}
+
+.skill-chip:hover .skill-chip-name {
+  color: #FACC15; /* Gold on hover */
 }
 
 .skill-chip-level {
   font-size: 0.72rem;
-  color: var(--accent-secondary);
-  font-weight: 500;
+  color: #38BDF8; /* Electric blue level */
+  font-weight: 600;
 }
 
 /* Bottom banner */
 .core-skills-banner {
-  padding: 1.75rem 2rem;
+  padding: 2rem 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.25rem;
   text-align: center;
 }
 
 .core-banner-title {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   color: var(--text-primary);
+  letter-spacing: 0.5px;
 }
 
 .core-pills-row {
@@ -111,15 +120,21 @@
 .core-pill {
   font-size: 0.85rem;
   font-weight: 600;
-  padding: 0.4rem 1rem;
+  padding: 0.45rem 1.15rem;
   border-radius: var(--radius-full);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border-color);
-  color: var(--text-secondary);
+  color: #94a3b8;
+  transition: all var(--transition-fast);
+}
+
+.core-pill:hover {
+  border-color: #FACC15;
+  color: #FACC15;
 }
 
 .highlight-pill {
-  border-color: var(--accent-primary);
-  color: var(--accent-primary);
-  background: var(--badge-bg);
+  border-color: #38BDF8;
+  color: #38BDF8;
+  background: rgba(56, 189, 248, 0.1);
 }

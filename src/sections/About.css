@@ -1,21 +1,21 @@
 /* ==========================================================
    ABOUT SECTION STYLES
-   Split narrative and highlight card grid
+   Narrative, Work Experience & Certifications
    ========================================================== */
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
-  align-items: stretch;
+  align-items: start;
+  margin-bottom: 2.5rem;
 }
 
 .about-narrative {
-  padding: 2.75rem;
+  padding: 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  justify-content: center;
 }
 
 .narrative-badge {
@@ -24,14 +24,21 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--accent-secondary);
-  margin-bottom: 0.35rem;
+  color: var(--accent-primary); /* #38BDF8 */
+  margin-bottom: 0.25rem;
 }
 
 .narrative-title {
-  font-size: 1.85rem;
+  font-size: 2rem;
   color: var(--text-primary);
-  line-height: 1.3;
+  line-height: 1.25;
+}
+
+.narrative-location {
+  font-size: 0.88rem;
+  color: #FACC15; /* Gold */
+  font-weight: 500;
+  margin-top: 0.35rem;
 }
 
 .narrative-text {
@@ -41,32 +48,126 @@
 }
 
 .narrative-text strong {
-  color: var(--text-primary);
+  color: #f8fafc;
   font-weight: 600;
 }
 
 .about-cta {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.15rem;
+  gap: 1rem;
   margin-top: 1rem;
 }
 
-.about-highlights-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+/* Experience Column */
+.experience-column {
+  display: flex;
+  flex-direction: column;
   gap: 1.25rem;
 }
 
-.about-highlight-card {
-  padding: 0.5rem 0;
+.experience-heading {
+  font-size: 1.45rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.experience-card {
+  border-left: 4px solid #38BDF8 !important;
+}
+
+.experience-card:hover {
+  border-left-color: #FACC15 !important;
+}
+
+.exp-points-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 0.5rem;
+}
+
+.exp-point {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+}
+
+.exp-bullet {
+  color: #FACC15; /* Gold bullet */
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+/* Certifications Banner */
+.certifications-banner {
+  padding: 2rem 2.5rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.certifications-title {
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  letter-spacing: 0.5px;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.cert-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+.cert-item:hover {
+  border-color: #FACC15;
+  background: var(--bg-card-hover);
+  transform: translateY(-2px);
+}
+
+.cert-icon {
+  font-size: 1.3rem;
+}
+
+.cert-name {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.cert-issuer {
+  display: block;
+  font-size: 0.74rem;
+  color: #38BDF8;
 }
 
 @media (max-width: 992px) {
   .about-grid {
     grid-template-columns: 1fr;
-  }
-  .about-narrative {
-    padding: 2rem;
   }
 }

@@ -4,20 +4,17 @@ import './Hero.css';
 
 /**
  * Hero Section
- * Highlights:
- * - "Hi, I'm Shyam Gupta"
- * - "Computer Engineering Student & Aspiring Full Stack Developer"
- * - Core interests: Web Dev, React, Full-Stack, New Technologies
- * - CTAs: "View My Projects" & "Contact Me" using reusable Button
- * - Subtle animations: Typing text rotation, floating cards, glowing photo ring
+ * Aligned with Shyam Gupta's Resume:
+ * - Full Stack Developer | Backend Developer | Thane, Mumbai
+ * - Core experience: GrubGain, DecodeLabs, Python, React.js, Node.js, MongoDB
+ * - Primary Accent #38BDF8 [Electric Blue], Secondary Accent #FACC15 [Gold hover]
  */
 const Hero = () => {
-  // Rotating typing specialties
   const roles = [
-    'Full Stack Development',
-    'React & Modern JavaScript',
-    'Responsive Web Applications',
-    'Cyber Security & Clean Architecture'
+    'Full Stack Developer',
+    'Backend Developer & API Architect',
+    'React.js & Next.js Engineer',
+    'MongoDB Aggregation & Database Specialist'
   ];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
@@ -25,14 +22,13 @@ const Hero = () => {
 
   useEffect(() => {
     const currentRole = roles[currentRoleIndex];
-    const typingSpeed = isDeleting ? 40 : 80;
+    const typingSpeed = isDeleting ? 35 : 75;
 
     const timeout = setTimeout(() => {
       if (!isDeleting) {
         setDisplayText(currentRole.substring(0, displayText.length + 1));
         if (displayText.length + 1 === currentRole.length) {
-          // Pause at end of word
-          setTimeout(() => setIsDeleting(true), 1600);
+          setTimeout(() => setIsDeleting(true), 1800);
         }
       } else {
         setDisplayText(currentRole.substring(0, displayText.length - 1));
@@ -48,38 +44,35 @@ const Hero = () => {
 
   return (
     <section id="home" className="hero-section">
-      {/* Background ambient lighting effects */}
       <div className="ambient-glow glow-1"></div>
       <div className="ambient-glow glow-2"></div>
 
       <div className="container hero-container">
-        {/* Left Column: Hero Copy & Actions */}
+        {/* Left Column: Copy & Actions */}
         <div className="hero-content">
           <div className="hero-badge">
             <span className="pulse-dot"></span>
-            <span>Welcome to my digital portfolio</span>
+            <span>📍 Thane, Mumbai • Available for Roles</span>
           </div>
 
           <h1 className="hero-title">
-            Hi, I'm <span className="gradient-text">Shyam Gupta</span>
+            Hi, I'm <span className="gradient-text">SHYAM GUPTA</span>
           </h1>
 
           <h2 className="hero-subtitle">
-            Computer Engineering Student & <br />
-            <span className="hero-role-text">Aspiring Full Stack Developer</span>
+            Full Stack Developer | Backend Developer
           </h2>
 
           <div className="typing-container">
-            <span className="typing-prefix">Passionate about </span>
+            <span className="typing-prefix">Specializing in </span>
             <span className="typing-dynamic">{displayText}</span>
             <span className="typing-cursor">|</span>
           </div>
 
           <p className="hero-description">
-            Passionate about modern <strong>Web Development</strong>, programming, and building scalable applications with <strong>React</strong>. Dedicated to learning new technologies, writing maintainable code, and evolving into a skilled <strong>Full Stack Software Engineer</strong>.
+            Engineered scalable APIs and real-time web applications with practical full-stack and backend experience. Proficient in <strong>Python</strong>, <strong>JavaScript</strong>, <strong>React.js</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>. Built real-time restaurant comparison engines at <strong>GrubGain</strong> and delivered end-to-end production products at <strong>DecodeLabs</strong>.
           </p>
 
-          {/* Call to Actions using reusable Button component */}
           <div className="hero-buttons">
             <Button
               text="View My Projects"
@@ -93,18 +86,25 @@ const Hero = () => {
               variant="outline"
               icon="✉️"
             />
+            <Button
+              text="Download CV"
+              href="/resume.pdf"
+              target="_blank"
+              variant="secondary"
+              icon="📄"
+            />
           </div>
 
-          {/* Quick Stats or Tech Pill Badges */}
           <div className="hero-tech-pills">
-            <span className="tech-pill">⚛️ React.js</span>
-            <span className="tech-pill">🌐 JavaScript ES6+</span>
-            <span className="tech-pill">💻 Full Stack</span>
-            <span className="tech-pill">🛡️ Security Mindset</span>
+            <span className="tech-pill">⚛️ React.js & Next.js</span>
+            <span className="tech-pill">🟢 Node.js & Express</span>
+            <span className="tech-pill">🍃 MongoDB Aggregations</span>
+            <span className="tech-pill">🐍 Python & APIs</span>
+            <span className="tech-pill">🛡️ Cisco Cybersecurity</span>
           </div>
         </div>
 
-        {/* Right Column: Profile Image & Floating Highlights */}
+        {/* Right Column: Profile Visual */}
         <div className="hero-visual">
           <div className="photo-wrapper">
             <div className="photo-glow-ring"></div>
@@ -113,25 +113,23 @@ const Hero = () => {
               alt="Shyam Gupta"
               className="hero-avatar"
               onError={(e) => {
-                // Graceful fallback if image path needs local fallback
                 e.target.src = 'https://images.unsplash.com/photo-1534972195531-a756b1126f24?w=500&auto=format&fit=crop&q=80';
               }}
             />
 
-            {/* Floating Glassmorphic Badges */}
             <div className="floating-badge badge-top-right glass-panel">
-              <span className="floating-badge-icon">🎓</span>
+              <span className="floating-badge-icon">💼</span>
               <div>
-                <span className="floating-badge-title">B.E. Computer Eng.</span>
-                <span className="floating-badge-desc">Academic Excellence</span>
+                <span className="floating-badge-title">GrubGain & DecodeLabs</span>
+                <span className="floating-badge-desc">Internship Experience</span>
               </div>
             </div>
 
             <div className="floating-badge badge-bottom-left glass-panel">
-              <span className="floating-badge-icon">⚡</span>
+              <span className="floating-badge-icon">🎓</span>
               <div>
-                <span className="floating-badge-title">React & Node.js</span>
-                <span className="floating-badge-desc">Modern Web Dev</span>
+                <span className="floating-badge-title">B.E. Computer Eng.</span>
+                <span className="floating-badge-desc">Mumbai University (3rd Yr)</span>
               </div>
             </div>
           </div>

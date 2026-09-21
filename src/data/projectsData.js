@@ -1,51 +1,51 @@
-// Projects Dataset for dynamic rendering with Card component
+// Projects Dataset aligned with Shyam Gupta's Resume & Real Experience
 export const projectsData = [
   {
     id: 1,
-    title: "Birthday Event Booking & Management",
-    description: "A full-featured web application for birthday party planning, customizable decoration packages, automated email login, fee calculation, and real-time OTP verification.",
-    image: "/screenshot1.png",
-    technologies: ["React", "JavaScript", "HTML5", "CSS3", "Java Backend", "REST APIs"],
-    link: "#projects",
-    linkText: "View Live Demo",
-    githubLink: "https://github.com",
+    title: "GrubGain - Restaurant Comparison Platform",
+    description: "Built the core real-time restaurant comparison engine from scratch (main USP of the platform). Optimized MongoDB aggregation pipelines and indexing, reducing query response times by 40% for real-time comparison.",
+    image: "/screenshot2.png",
+    technologies: ["Node.js", "Express.js", "MongoDB", "React", "REST APIs", "Postman"],
+    link: "https://grubgain.com",
+    linkText: "Live at grubgain.com",
+    githubLink: "https://github.com/vu1f2425010-cpu",
     featured: true,
     category: "Full Stack"
   },
   {
     id: 2,
-    title: "Tuition & Academic Management App",
-    description: "An integrated platform engineered for coaching institutes and educators to oversee student enrollment, attendance tracking, test grading, fee logs, and parent alerts.",
-    image: null,
-    technologies: ["React.js", "Node.js", "Express", "MongoDB", "CSS Grid"],
-    link: "#projects",
-    linkText: "Explore Platform",
-    githubLink: "https://github.com",
+    title: "Personal Developer Portfolio",
+    description: "Personal developer portfolio built with React.js, clean CSS architecture, and reusable components. Fully responsive across all viewports and deployed live on Vercel.",
+    image: "/screenshot1.png",
+    technologies: ["React.js", "JavaScript ES6+", "HTML5", "CSS3", "Vite", "Vercel"],
+    link: "https://port-drab-sigma.vercel.app/",
+    linkText: "Live on Vercel",
+    githubLink: "https://github.com/vu1f2425010-cpu/Portfolio",
     featured: true,
-    category: "Web Application"
+    category: "Frontend"
   },
   {
     id: 3,
-    title: "GrubGain MarketIQ - AI Restaurant Intelligence",
-    description: "An AI-powered restaurant market research and competitive intelligence engine with interactive dashboards, customer sentiment analysis, and stripe billing preview.",
-    image: "/screenshot2.png",
-    technologies: ["React", "Firebase", "AI Analytics", "Tailored CSS", "Stripe API"],
+    title: "DecodeLabs Production Web Products",
+    description: "Led end-to-end product engineering from UI/UX design to cloud deployment. Built robust backend APIs with Node.js/Express and dynamic responsive frontends with React & Next.js.",
+    image: null,
+    technologies: ["React.js", "Next.js", "Node.js", "Express.js", "Tailwind CSS"],
     link: "#projects",
-    linkText: "View Preview",
-    githubLink: "https://github.com",
+    linkText: "Internship Project",
+    githubLink: "https://github.com/vu1f2425010-cpu",
     featured: true,
-    category: "AI & Analytics"
+    category: "Full Stack"
   },
   {
     id: 4,
-    title: "Cyber Security Threat Monitor & Scanner",
-    description: "A lightweight vulnerability scanner and network activity visualizer with custom packet inspection algorithms, automated reporting, and interactive threat maps.",
+    title: "Birthday Event Booking & Management",
+    description: "Comprehensive event booking application featuring custom decoration packages, secure email authentication, automated fee calculator, and real-time OTP confirmation.",
     image: null,
-    technologies: ["Python", "JavaScript", "React", "Cyber Security", "WebSockets"],
+    technologies: ["React.js", "Node.js", "MongoDB", "JavaScript", "REST APIs"],
     link: "#projects",
-    linkText: "Case Study",
-    githubLink: "https://github.com",
+    linkText: "View Overview",
+    githubLink: "https://github.com/vu1f2425010-cpu",
     featured: false,
-    category: "Cyber Security"
+    category: "Web Application"
   }
 ];

@@ -1,23 +1,37 @@
 # 🚀 Shyam Gupta | Modern React Developer Portfolio
-### Week 1 Comprehensive Submission: Assignment 1 & Assignment 2
+### Full Stack Developer & Backend Developer • Thane, Mumbai
 
-🌐 **Live Vercel Deployment:** [https://port-drab-sigma.vercel.app/](https://port-drab-sigma.vercel.app/)
+🌐 **Live Vercel Deployment:** [https://port-drab-sigma.vercel.app/](https://port-drab-sigma.vercel.app/)  
+📂 **GitHub Repository:** [https://github.com/vu1f2425010-cpu/Portfolio](https://github.com/vu1f2425010-cpu/Portfolio)
 
 A complete, modern, professional, and fully responsive Developer Portfolio website built using **React.js (v18+)**, **HTML5**, **CSS3**, and **JavaScript ES6+**.
 
-This project unites **Week 1 Assignment 1 (Responsive Personal Portfolio)** and **Week 1 Assignment 2 (5 Reusable React Components with Props, State, and Events)** into one cohesive web application.
+This project unites **Week 1 Assignment 1 (Responsive Personal Portfolio)** and **Week 1 Assignment 2 (5 Reusable React Components with Props, State, and Events)** into one cohesive web application, meticulously personalized with **Shyam Gupta's resume credentials**.
 
 ---
 
-## 🌟 Key Highlights & Design Aesthetics
+## 🎨 Design System & Color Palette
 
-- **Modern Glassmorphism Design**: Frosted glass panels with backdrop blur filters, soft gradient borders, and subtle glow shadows.
+The visual design is constructed around the exact requested color palette:
+
+| Token | Hex Value | Name / Role | Usage |
+| :--- | :--- | :--- | :--- |
+| **Background** | `#0A0F1C` | Deep Navy | Main page background, input fields, and code blocks |
+| **Cards** | `#111827` | Dark Slate | Project cards, education cards, contact panel & modals |
+| **Primary Accent** | `#38BDF8` | Electric Blue | Buttons, active navigation links, and primary badges |
+| **Secondary Accent** | `#FACC15` | Gold | Hover highlights, hover glow, status dots, and accents |
+
+---
+
+## 🌟 Key Highlights & Engineering Features
+
+- **Custom Color Theme**: Deep Navy background (`#0A0F1C`), Dark Slate cards (`#111827`), Electric Blue buttons/links (`#38BDF8`), and Gold hover states (`#FACC15`).
+- **Production Work Experience**: Highlights real-world internships at **GrubGain** (Backend Developer Intern) and **DecodeLabs** (Full Stack Developer Intern).
 - **Dual Theme Support (Light / Dark Mode)**: Dynamic theme switching using React `useState`, synchronized with CSS Custom Properties and persisted via `localStorage`.
-- **Fully Responsive**: Crafted with modern **CSS3 Flexbox** and **CSS Grid**, providing seamless layouts across mobile, tablet, laptop, and ultra-wide displays without horizontal scrollbars.
-- **Smooth Navigation**: Sticky glassmorphic navbar with smooth section scrolling, dynamic scroll shadows, and an animated mobile drawer menu.
-- **Subtle Micro-Animations**: Typing specialty rotation effect, hovering card lifts, glowing profile ring, and animated pulsing status badges.
+- **Fully Responsive Layouts**: Built with pure **CSS3 Flexbox** and **CSS Grid** (`repeat(auto-fit, minmax(...))`) across mobile, tablet, laptop, and desktop.
+- **Micro-Animations**: Rotating typing specialties, glowing avatar ring, floating badges, and smooth scroll navigation.
 - **Controlled Contact Form**: Real-time controlled inputs, client-side regex email validation, animated error messages, and submission notifications with form reset.
-- **Dynamic Projects Showcase**: Real-world projects mapped dynamically from an array into reusable Card components with active category filtering.
+- **Industry Certifications**: Showcases Cisco Cybersecurity, MongoDB Associate, Gemini Certified Student, Power BI, and Databricks GenAI Fundamentals.
 
 ---
 
@@ -40,25 +54,28 @@ This project unites **Week 1 Assignment 1 (Responsive Personal Portfolio)** and 
 
 ### Required Sections:
 - **About (`src/sections/About.jsx`)**:
-  - Personal narrative as a passionate Computer Engineering undergraduate.
-  - Clear career goals in full-stack software development.
-  - Highlights cards detailing problem solving, security mindset, and continuous learning.
+  - Professional summary from resume: "Engineered scalable APIs and real-time web applications with practical full-stack and backend experience, proficient in Python, JavaScript, React.js, Node.js, and MongoDB."
+  - Details internships at **GrubGain** (optimized MongoDB aggregations by 40%) and **DecodeLabs** (delivered 2+ production-ready live products).
+  - Displays industry certifications (Cisco Cybersecurity, MongoDB Associate, Gemini, Power BI, Databricks).
 - **Education (`src/sections/Education.jsx`)**:
-  - B.E. in Computer Engineering with academic distinction (CGPA 8.8/10.0).
-  - Higher Secondary Schooling achievements.
-  - Detailed coursework breakdown: Data Structures & Algorithms, DBMS, Operating Systems, Computer Networks.
+  - **B.E. in Computer Engineering (Third Year)**: Mumbai University | 2024 - 2028.
+  - **HSC Maharashtra Board**: JEE (85%) | CET PCM (70%) | 2022 - 2024.
+  - **SSC Maharashtra Board**: 2021 - 2022 (First Class with Distinction).
   - Rendered using the reusable `Card` component.
 - **Projects (`src/sections/Projects.jsx`)**:
-  - Dynamic `.map()` rendering from `src/data/projectsData.js`.
-  - Featured projects include:
-    - **Birthday Event Booking & Management**: Email login, fee portal, and real OTP verification.
-    - **Tuition & Academic Management App**: Student/teacher management, attendance, and fee logs.
-    - **GrubGain MarketIQ**: AI-based restaurant market research and Stripe preview.
-    - **Cyber Security Threat Monitor**: Lightweight vulnerability scanner and network visualizer.
-  - Dynamic category filters: Full Stack, Web Application, AI & Analytics, Cyber Security.
+  - Dynamic `.map()` rendering from `src/data/projectsData.js`:
+    - **GrubGain - Restaurant Comparison Platform**: Real-time restaurant comparison engine for prices, ratings, and menu items. Live at `grubgain.com`.
+    - **Personal Developer Portfolio**: Responsive React application deployed live on Vercel (`port-drab-sigma.vercel.app`).
+    - **DecodeLabs Production Web Products**: Full stack products with Next.js, React, Node.js, and Express.js.
+    - **Birthday Event Booking & Management**: Real-time OTP authentication and fee portal.
 - **Contact (`src/sections/Contact.jsx`)**:
-  - Direct communication channels: Email (`pg275017@gmail.com`), LinkedIn, GitHub, Location.
-  - Fully integrated controlled message form with instant feedback.
+  - Direct communication channels:
+    - 📞 **Phone**: `+91 9321407216`
+    - 📧 **Email**: `pg275017@gmail.com`
+    - 📍 **Location**: `Thane, Mumbai`
+    - 💻 **GitHub**: [github.com/vu1f2425010-cpu](https://github.com/vu1f2425010-cpu)
+    - 💼 **LinkedIn**: [linkedin.com/in/Shyam-Gupta](https://linkedin.com/in/Shyam-Gupta)
+  - Controlled contact form with real-time validation and feedback.
 
 ---
 
@@ -72,40 +89,24 @@ All 5 required components are built as modular, reusable building blocks in `src
 - **Props**: Receives `darkMode` and `onToggleTheme`.
 
 ### 2. Footer (`src/components/Footer.jsx`)
-- **Features**: Brand identity, short bio, direct social profile links (GitHub, LinkedIn, Email), copyright notice, availability badge, and a smooth **Back-to-Top** button.
+- **Features**: Brand identity, short bio, direct social profile links (GitHub, LinkedIn, Email, Phone), copyright notice, availability badge, and a smooth **Back-to-Top** button.
 
 ### 3. Card (`src/components/Card.jsx`)
-- **Universal Reusability**: Serves as the single card component for **Projects**, **Education**, **Skills**, and the **Learning Demonstration**.
+- **Universal Reusability**: Single card component for **Projects**, **Education**, **Skills**, and the **Learning Demonstration**.
+- **Card Background**: `#111827` with Electric Blue badges and Gold hover borders.
 - **Props Accepted**:
-  - `title`: Card heading text
-  - `subtitle`: Subheading, period, or institution
-  - `description`: Descriptive text content
-  - `image`: Project preview image / screenshot
-  - `technologies`: Array of skill badges (`string[]`)
-  - `link`: Destination URL
-  - `linkText`: Action button label
-  - `githubLink`: Optional repository URL
-  - `badge`: Status or category tag
-  - `icon`: Visual emoji or icon indicator
-  - `variant`: Visual style modifier (`project`, `education`, `skill`, `default`)
-  - `children`: Flexible nested content (lists, stats, metadata)
+  - `title`, `subtitle`, `description`, `image`, `technologies`, `link`, `linkText`, `githubLink`, `badge`, `icon`, `variant`, `children`.
 
 ### 4. Button (`src/components/Button.jsx`)
 - **Universal Reusability**: Replaces native `<button>` and `<a>` elements across the entire website.
+- **Colors**: Primary is Electric Blue (`#38BDF8`), hovering turns Gold (`#FACC15`).
 - **Props Accepted**:
-  - `text`: Label displayed inside the button
-  - `onClick`: Event callback function
-  - `type`: Button type (`'button'` | `'submit'` | `'reset'`)
-  - `variant`: Visual style (`'primary'` | `'outline'` | `'secondary'` | `'ghost'`)
-  - `href`: When passed, renders an accessible `<a>` styled as a button
-  - `icon`: Optional prefix emoji / icon
-  - `disabled`: Disables interaction and adds opacity
-  - `children`: Fallback child components
+  - `text`, `onClick`, `type`, `variant`, `href`, `icon`, `disabled`, `children`.
 
 ### 5. Form (`src/components/Form.jsx`)
 - **Features**: Controlled inputs for `name`, `email`, `subject`, and `message`.
-- **Validation**: Ensures name presence (min 2 chars), valid email regex format (`/^[^\s@]+@[^\s@]+\.[^\s@]+$/`), and message length (min 10 chars).
-- **Feedback**: Displays animated error warnings or a green success confirmation banner upon simulated dispatch, followed by automatic form clearing.
+- **Validation**: Name presence (min 2 chars), valid email regex format, and message length (min 10 chars).
+- **Feedback**: Displays animated error warnings or a gold success confirmation banner upon simulated dispatch, followed by automatic form clearing.
 
 ---
 
@@ -118,35 +119,27 @@ All 5 required components are built as modular, reusable building blocks in `src
 | **`Footer`** | `src/App.jsx` | Anchored at page bottom |
 | **`Card`** | `src/sections/Projects.jsx` | `Education.jsx`, `Skills.jsx`, `About.jsx`, `LearningDemo.jsx` |
 | **`Button`** | `src/sections/Hero.jsx` | `Header.jsx`, `Card.jsx`, `Form.jsx`, `Footer.jsx`, `LearningDemo.jsx` |
-| **`Form`** | `src/sections/Contact.jsx` | Can be embedded on any landing page |
+| **`Form`** | `src/sections/Contact.jsx` | Reusable on any contact page |
 
 ### Where Props are Used
-- **`Card` Props**: `title`, `description`, `image`, `technologies`, `link`, `githubLink`, `badge`, `variant` passed inside `Projects.jsx` (`project.title`, etc.) and `Education.jsx`.
-- **`Button` Props**: `variant="primary"`, `icon="🚀"`, `href="#projects"`, `onClick={handleReset}`, `disabled={isSubmitting}` passed in `Hero.jsx`, `Form.jsx`, `Header.jsx`, etc.
+- **`Card` Props**: `title`, `description`, `image`, `technologies`, `link`, `githubLink`, `badge`, `variant` passed inside `Projects.jsx` and `Education.jsx`.
+- **`Button` Props**: `variant="primary"`, `icon="🚀"`, `href="#projects"`, `onClick={handleReset}`, `disabled={isSubmitting}` passed across components.
 - **`Header` Props**: `darkMode={darkMode}` and `onToggleTheme={handleToggleTheme}` passed from `App.jsx`.
 - **`Form` Props**: `title` and `subtitle` passed from `Contact.jsx`.
 
 ### Where State is Used (`useState`)
 1. **Light / Dark Mode State**: `const [darkMode, setDarkMode] = useState(true)` in `App.jsx` toggles the entire website's theme and syncs with `localStorage`.
 2. **Mobile Menu Drawer State**: `const [mobileMenuOpen, setMobileMenuOpen] = useState(false)` in `Header.jsx` toggles the responsive drawer.
-3. **Contact Form Field State**: `const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' })` in `Form.jsx` handles controlled inputs.
+3. **Contact Form Field State**: `const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' })` in `Form.jsx`.
 4. **Form Validation & Status State**: `const [errors, setErrors] = useState({})` and `const [statusMessage, setStatusMessage] = useState(null)` in `Form.jsx`.
 5. **Project Filter State**: `const [selectedFilter, setSelectedFilter] = useState('All')` in `Projects.jsx`.
 6. **Skill Filter State**: `const [activeCategory, setActiveCategory] = useState('All')` in `Skills.jsx`.
 7. **Interactive Sandbox State**: `const [interactiveCounter, setInteractiveCounter] = useState(0)` and `demoToggle` in `LearningDemo.jsx`.
 
 ### Where Events are Used
-- **`onClick`**:
-  - Theme toggler button (Dark $\leftrightarrow$ Light).
-  - Mobile hamburger menu button.
-  - Project and Skill category filter tabs.
-  - Form reset button (`Clear Form`).
-  - Interactive counter in the sandbox (`+ Increment`, `- Decrement`, `Reset`).
-  - Smooth scroll anchor links.
-- **`onChange`**:
-  - Controlled inputs in `Form.jsx` updating `formData` on keystroke and clearing specific errors.
-- **`onSubmit`**:
-  - Controlled form submission in `Form.jsx` preventing default page reload (`e.preventDefault()`), running validations, and triggering submission state.
+- **`onClick`**: Theme toggle button, mobile menu button, category filter tabs, form reset, counter increment/decrement, and smooth scroll anchors.
+- **`onChange`**: Controlled inputs in `Form.jsx` updating `formData` on keystroke and clearing specific errors.
+- **`onSubmit`**: Controlled form submission in `Form.jsx` preventing page reload (`e.preventDefault()`), validating fields, and updating state.
 
 ---
 
@@ -166,8 +159,8 @@ Located at the bottom of the page (`#demo`), this section provides an interactiv
 c:\port/
 ├── public/
 │   ├── myphoto.jpg                              # Developer profile avatar
-│   ├── screenshot1.png                          # Birthday Event Booking preview
-│   ├── screenshot2.png                          # GrubGain MarketIQ preview
+│   ├── screenshot1.png                          # Portfolio preview
+│   ├── screenshot2.png                          # GrubGain preview
 │   └── resume.pdf                               # Downloadable CV
 ├── src/
 │   ├── components/
@@ -178,7 +171,7 @@ c:\port/
 │   │   └── Form.jsx & Form.css                  # Reusable Contact Form component
 │   ├── sections/
 │   │   ├── Hero.jsx & Hero.css                  # Hero banner section
-│   │   ├── About.jsx & About.css                # About Me section
+│   │   ├── About.jsx & About.css                # About Me & Experience section
 │   │   ├── Education.jsx & Education.css        # Academic Education section
 │   │   ├── Skills.jsx & Skills.css              # Skills & competencies section
 │   │   ├── Projects.jsx & Projects.css          # Featured Projects section
@@ -204,6 +197,7 @@ c:\port/
 
 - **Core**: React 18, HTML5, JavaScript ES6+
 - **Styling**: Vanilla CSS3 (Custom Properties, Flexbox, CSS Grid, Glassmorphism)
+- **Palette**: Deep Navy (`#0A0F1C`), Dark Slate (`#111827`), Electric Blue (`#38BDF8`), Gold (`#FACC15`)
 - **Tooling & Bundling**: Vite 5
 - **Typography**: Google Fonts (Outfit for headers, Inter for UI body, JetBrains Mono for code)
 - **Deployment**: [Vercel](https://port-drab-sigma.vercel.app/)
@@ -211,10 +205,6 @@ c:\port/
 ---
 
 ## 7. Getting Started & How to Run
-
-### Prerequisites
-- Node.js (v18.0.0 or higher recommended)
-- npm (v9.0.0 or higher)
 
 ### Installation
 ```bash
@@ -229,17 +219,11 @@ npm install
 ```bash
 npm run dev
 ```
-Open your browser and navigate to:
-```
-http://localhost:5173/
-```
+Open your browser at: `http://localhost:5173/`
 
-### Production Build & Preview
+### Production Build
 ```bash
-# Build the production bundle
 npm run build
-
-# Preview the built production output
 npm run preview
 ```
 
@@ -247,8 +231,11 @@ npm run preview
 
 ## 👤 Author
 
-**Shyam Gupta**  
-- **Live Portfolio**: [https://port-drab-sigma.vercel.app/](https://port-drab-sigma.vercel.app/)
+**SHYAM GUPTA**  
+- **Role**: Full Stack Developer | Backend Developer  
+- **Location**: Thane, Mumbai  
+- **Phone**: [+91 9321407216](tel:+919321407216)  
 - **Email**: [pg275017@gmail.com](mailto:pg275017@gmail.com)  
-- **LinkedIn**: [linkedin.com/in/shyam-gupta](https://linkedin.com/in/shyam-gupta)  
-- **GitHub**: [github.com/Shyamgupta](https://github.com/Shyamgupta)
+- **Live Portfolio**: [https://port-drab-sigma.vercel.app/](https://port-drab-sigma.vercel.app/)  
+- **GitHub**: [https://github.com/vu1f2425010-cpu](https://github.com/vu1f2425010-cpu)  
+- **LinkedIn**: [https://linkedin.com/in/Shyam-Gupta](https://linkedin.com/in/Shyam-Gupta)

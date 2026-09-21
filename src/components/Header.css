@@ -1,6 +1,6 @@
 /* ==========================================================
    HEADER COMPONENT STYLES
-   Sticky glassmorphism header, animations, mobile drawer
+   Accent: #38BDF8 [Electric Blue], Hover: #FACC15 [Gold]
    ========================================================== */
 
 .header {
@@ -15,12 +15,12 @@
 }
 
 .header-scrolled {
-  background: var(--bg-glass-nav);
+  background: rgba(10, 15, 28, 0.94); /* Deep Navy blurred */
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-color);
   padding: 0.8rem 0;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
 }
 
 .header-container {
@@ -38,6 +38,7 @@
   font-size: 1.35rem;
   font-weight: 800;
   letter-spacing: -0.5px;
+  text-decoration: none;
 }
 
 .logo-badge {
@@ -46,12 +47,16 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  background: var(--accent-gradient);
-  color: #ffffff;
+  background: linear-gradient(135deg, #38BDF8 0%, #FACC15 100%);
+  color: #0A0F1C;
   border-radius: var(--radius-sm);
   font-size: 0.95rem;
   font-weight: 800;
-  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 4px 10px rgba(56, 189, 248, 0.4);
+}
+
+.header-logo:hover .logo-text {
+  color: #FACC15; /* Gold hover */
 }
 
 /* Desktop Nav */
@@ -83,14 +88,14 @@
   left: 50%;
   width: 0;
   height: 2px;
-  background: var(--accent-gradient);
+  background: #FACC15; /* Gold indicator */
   transition: all var(--transition-fast);
   transform: translateX(-50%);
   border-radius: 2px;
 }
 
 .nav-link:hover {
-  color: var(--text-primary);
+  color: #FACC15; /* Gold hover */
 }
 
 .nav-link:hover::after {
@@ -109,7 +114,13 @@
   padding: 0.45rem 0.85rem;
   border-radius: var(--radius-full);
   border: 1px solid var(--border-color);
-  background: var(--bg-card);
+  background: #111827;
+  color: #38BDF8;
+}
+
+.theme-toggle-btn:hover {
+  border-color: #FACC15;
+  color: #FACC15;
 }
 
 .header-resume-btn {
@@ -124,13 +135,17 @@
   justify-content: space-around;
   width: 36px;
   height: 36px;
-  background: var(--bg-card);
+  background: #111827;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   padding: 8px;
   cursor: pointer;
   z-index: 1100;
   transition: all var(--transition-fast);
+}
+
+.hamburger-btn:hover {
+  border-color: #FACC15;
 }
 
 .hamburger-btn .bar {
@@ -143,6 +158,7 @@
 
 .hamburger-btn.active .bar:nth-child(1) {
   transform: translateY(6.5px) rotate(45deg);
+  background-color: #FACC15;
 }
 
 .hamburger-btn.active .bar:nth-child(2) {
@@ -151,6 +167,7 @@
 
 .hamburger-btn.active .bar:nth-child(3) {
   transform: translateY(-6.5px) rotate(-45deg);
+  background-color: #FACC15;
 }
 
 /* Mobile Drawer */
@@ -160,7 +177,7 @@
   top: 60px;
   left: 0;
   right: 0;
-  background: var(--bg-glass-nav);
+  background: rgba(10, 15, 28, 0.98);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-color);
@@ -172,7 +189,7 @@
 }
 
 .mobile-drawer.open {
-  max-height: 400px;
+  max-height: 420px;
   opacity: 1;
   box-shadow: var(--shadow-lg);
 }
@@ -193,6 +210,10 @@
   border-bottom: 1px solid var(--border-color);
 }
 
+.mobile-nav-link:hover {
+  color: #FACC15; /* Gold hover */
+}
+
 .mobile-drawer-footer {
   margin-top: 1.25rem;
 }
@@ -201,7 +222,6 @@
   width: 100%;
 }
 
-/* Responsive Media Queries */
 @media (max-width: 900px) {
   .header-nav-desktop {
     display: none;
