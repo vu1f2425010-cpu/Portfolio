@@ -1,0 +1,450 @@
+/* ==========================================================
+   TECH DEMO SECTION STYLES
+   Week 1 Concepts Showcase — native to portfolio design system
+   Background: #0A0F1C, Cards: #111827, Accent: #38BDF8, Hover: #FACC15
+   ========================================================== */
+
+/* ---- Concept Cards Grid (CSS Grid requirement) ---- */
+.demo-concepts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
+  margin-bottom: 2.75rem;
+}
+
+/* ---- Individual Concept Card ---- */
+.demo-concept-card {
+  padding: 1.65rem;
+  cursor: pointer;
+  border-left: 3px solid var(--card-accent, var(--accent-primary));
+  transition: all var(--transition-normal);
+  user-select: none;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.demo-concept-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--card-glow, rgba(56, 189, 248, 0.06));
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+  pointer-events: none;
+}
+
+.demo-concept-card:hover::before,
+.demo-concept-card.expanded::before {
+  opacity: 1;
+}
+
+.demo-concept-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--card-accent, var(--accent-primary));
+  box-shadow: 0 12px 32px var(--card-glow, rgba(56, 189, 248, 0.2));
+}
+
+.demo-concept-card:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 3px;
+}
+
+.demo-concept-card.expanded {
+  border-color: var(--card-accent, var(--accent-primary));
+  box-shadow: 0 8px 24px var(--card-glow, rgba(56, 189, 248, 0.25));
+}
+
+/* ---- Card Header (Flexbox) ---- */
+.demo-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.demo-card-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--card-glow, rgba(56, 189, 248, 0.12));
+  border: 1px solid var(--card-accent, var(--accent-primary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.demo-concept-card:hover .demo-card-icon-wrap {
+  background: var(--card-accent, var(--accent-primary));
+  box-shadow: 0 0 16px var(--card-glow, rgba(56, 189, 248, 0.35));
+}
+
+.demo-card-icon {
+  font-size: 1.35rem;
+}
+
+.demo-card-title-group {
+  flex: 1;
+  min-width: 0;
+}
+
+.demo-card-category {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.demo-card-count {
+  font-size: 0.75rem;
+  color: var(--card-accent, var(--accent-primary));
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.demo-card-toggle {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+.demo-concept-card:hover .demo-card-toggle {
+  color: var(--card-accent, var(--accent-primary));
+}
+
+/* ---- Concept Tags List (Flexbox) ---- */
+.demo-concept-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.demo-concept-tag {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+  font-family: var(--font-mono);
+}
+
+.demo-concept-card:hover .demo-concept-tag {
+  border-color: var(--card-accent, var(--accent-primary));
+  color: var(--card-accent, var(--accent-primary));
+  background: var(--card-glow, rgba(56, 189, 248, 0.08));
+}
+
+/* ---- Expanded Detail ---- */
+.demo-card-detail {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  animation: fadeSlideIn 0.25s ease;
+}
+
+.demo-card-detail p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---- Checklist Grid (CSS Grid) ---- */
+.demo-checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1.75rem;
+  margin-bottom: 2.75rem;
+}
+
+.demo-checklist-panel {
+  padding: 1.75rem 2rem;
+}
+
+.demo-checklist-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 1.25rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.demo-check-icon {
+  font-size: 1.1rem;
+}
+
+.demo-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.demo-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.check-mark {
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+/* ---- Architecture Panel ---- */
+.demo-architecture {
+  padding: 2rem 2.5rem;
+  margin-bottom: 2.75rem;
+}
+
+.demo-arch-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 0.35rem 0;
+}
+
+.demo-arch-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0 0 1.5rem 0;
+}
+
+/* Tabs row (Flexbox) */
+.demo-arch-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.demo-arch-tab {
+  padding: 0.45rem 1.15rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-family: var(--font-body);
+}
+
+.demo-arch-tab:hover {
+  border-color: #FACC15;
+  color: #FACC15;
+}
+
+.demo-arch-tab.active {
+  background: #38BDF8;
+  color: #0A0F1C;
+  border-color: #38BDF8;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.35);
+}
+
+/* Table */
+.demo-arch-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.arch-table-header {
+  display: grid;
+  grid-template-columns: 130px 1fr 1fr;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  color: var(--accent-primary);
+}
+
+.arch-table-row {
+  display: grid;
+  grid-template-columns: 130px 1fr 1fr;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-md) !important;
+  align-items: center;
+  transition: all var(--transition-fast);
+}
+
+.arch-table-row:hover {
+  border-color: var(--accent-secondary) !important;
+}
+
+.arch-comp-name {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #38BDF8;
+}
+
+.arch-comp-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.arch-comp-detail code {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  word-break: break-word;
+  line-height: 1.6;
+}
+
+.arch-col-highlight {
+  color: #FACC15;
+}
+
+/* ---- Tech Strip Grid (CSS Grid) ---- */
+.demo-tech-strip {
+  padding: 2rem 2.5rem;
+}
+
+.demo-strip-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.demo-strip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.demo-strip-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.15rem 0.75rem;
+  border-radius: var(--radius-md) !important;
+  gap: 0.35rem;
+  transition: all var(--transition-fast);
+}
+
+.demo-strip-item:hover {
+  transform: translateY(-3px);
+  border-color: #38BDF8 !important;
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.18) !important;
+}
+
+.strip-icon {
+  font-size: 1.5rem;
+}
+
+.strip-label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.strip-sub {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  text-align: center;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1024px) {
+  .arch-table-header,
+  .arch-table-row {
+    grid-template-columns: 110px 1fr;
+  }
+
+  .arch-comp-detail {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .demo-concepts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-checklist-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-architecture {
+    padding: 1.5rem;
+  }
+
+  .arch-table-header,
+  .arch-table-row {
+    grid-template-columns: 100px 1fr;
+  }
+
+  .demo-strip-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .demo-tech-strip {
+    padding: 1.5rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .demo-concepts-grid {
+    gap: 1rem;
+  }
+
+  .demo-concept-card {
+    padding: 1.25rem;
+  }
+
+  .demo-strip-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .demo-arch-tabs {
+    gap: 0.4rem;
+  }
+
+  .demo-arch-tab {
+    font-size: 0.78rem;
+    padding: 0.4rem 0.85rem;
+  }
+}

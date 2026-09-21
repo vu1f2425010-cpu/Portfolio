@@ -7,6 +7,7 @@ import Education from './sections/Education';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
+import TechDemo from './sections/TechDemo';
 import './App.css';
 
 /**
@@ -67,6 +68,9 @@ function App() {
 
         {/* Contact Section */}
         <Contact />
+
+        {/* Week 1 Technical Concepts Showcase Section */}
+        <TechDemo />
 
       </main>
 

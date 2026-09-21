@@ -22,7 +22,7 @@ export const projectsData = [
     linkText: "Live on Vercel",
     githubLink: "https://github.com/vu1f2425010-cpu/Portfolio",
     featured: true,
-    category: "Frontend"
+    category: "Web Application"
   },
   {
     id: 3,
